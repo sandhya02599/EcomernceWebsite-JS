@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #eeeeee;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    box-shadow: 0px 2px 2px 2px rgb(204, 203, 203);
+    padding: 20px;
+
+
+
+}
+ 
+nav .logo{
+    margin-left: 45px;
+    font-size:22px;
+    
+}
+nav h1{
+    font-family: 'Lato', sans-serif;
+}
+ul li a{
+    margin-inline: 25px;
+     font-size: 20px;
+     
+}
+ul #home{
+    color: rgb(1, 190, 190);
+}
+ul li i{
+    font-size: 22px;
+}
+ul li i:hover{
+    color: rgb(87, 86, 86);
+    cursor: pointer;
+}
+ul li a:hover{
+     color: rgb(87, 86, 86);
+     cursor: pointer;
+
+     border-bottom: 2px solid rgb(73, 73, 73);
+      
+}
+ul{
+    margin-right: 50px;
+    margin-top: 6px;
+}
+ 
+nav ul{
+    list-style: none;
+}
+.mainPage{
+    display: flex;
+    justify-content: space-around;
+}
+.mainPage .text{
+    margin-top: 123px;
+}
+.text button:hover{
+    border: 3px solid rgb(4, 168, 168);
+    background-color: transparent;
+    font-weight: 700;
+    color: rgb(4, 168, 168);
+    
+
+}
+.text h1{
+    font-size: 54px;
+}
+.mainPage img{
+   margin-top: -44px;
+   
+}
+.heads{
+    color: rgb(2, 131, 131);
+}
+.text p{
+    margin-top: 22px;
+}
+.text h2{
+    color: rgb(63, 63, 63);
+}
+.text button{
+    width: 140px;
+    height: 40px;
+    margin-top: 23px;
+    background-color: rgb(2, 131, 131);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.head{
+    text-align: center;
+    padding: 44px;
+    margin-top: 11px;
+}
+.head span{
+    color: rgb(4, 155, 155);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+.card .crd {
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    margin-inline: 22px;
+    
+}
+.card .crd:hover{
+    width: 320px;
+    height: 520px;
+    transition: 0.6s ease;
+}
+.crd .txt {
+    margin-left: 28px;
+ 
+}
+.txt i{
+    color: rgb(255, 196, 0);
+    margin-top: 4px;
+    font-size:19px;
+}
+.txt button{
+    width: 110px;
+    height: 33px;
+    border: none;
+    background-color: rgb(1, 148, 148);
+    color: white;
+    font-size: 16px;
+    margin-top: 8px;
+}
+ 
+.crd img{
+    width: 85%;
+    padding: 22px;
+    border-radius: 30px;
+}
+  
+.trd{
+    display: flex;
+    justify-content: center;
+    
+     
+}
+.trending{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    margin-inline: 22px;
+    border-radius: 22px;
+
+}
+.trending .txt{
+    padding: 22px;
+    margin-top: 13%;
+}
+.txt a{
+    width: 140px;
+    height: 36px;
+    background-color: rgb(3, 94, 94);
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 7px;
+}
+.txt a:hover{
+    background-color: rgb(2, 146, 146);
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.9 ease;
+}
+.trending img{
+    width: 55%;
+    border-radius: 22px;
+    padding: 12px;
+}
+.trending:hover{
+    width: 530px;
+    height: 330px;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.letter{
+    background-color: rgba(11, 6, 37, 0.993);
+    padding: 44px;
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.letter .inp input{
+    width: 270px;
+    height: 29px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    
+}
+.inp{
+    display: flex;
+}
+.inp button{
+    width: 100px;
+    height: 39px;
+    border: none;
+    background-color: rgb(3, 134, 134);
+    font-size: 18px;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(219, 218, 218);
+    padding: 42px;
+   
+}
+.footer .Ftext{
+    margin-inline: 72px;
+}
+.Ftext p{
+    margin-top: 22px;
+}
+
+
+/* about */
+
+.about{
+    display: none;
+}
+.aboutText{
+    background-color: rgb(1, 1, 43);
+    color: white;
+    padding: 54px;
+    font-size: 18px;
+
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    background-color: #fff;
+    padding: 22px;
+    margin-left: 17%;
+    margin-top: 8%;
+    border-radius: 6px;
+}
+.dumiText{
+    margin-top: 66px;
+}
+.dumiText p{
+    margin-top: 11px;
+}
+
+.aboutus img{
+    width: 150%;
+}
+
+/* contact */
+
+.contact{
+    display: none;
+}
+.contactBanner{
+    background-color: rgb(4, 4, 44);
+    color: white;
+    padding: 55px;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    
+    
+}
+.connectText{
+    background-color: #fff;
+    padding: 53px;
+}
+.connectText p{
+    margin-top: 21px;
+}
+.contact img{
+    width: 50%;
+}
+.contact img:hover{
+    width: 52%;
+    transition: 0.8s ease;
+    cursor: pointer;
+
+}
+.form{
+    text-align: center;
+    margin-top: 73px;
+}
+.form button{
+    width: 340px;
+    height: 40px;
+    border: none;
+    background-color: rgb(1, 87, 87);
+    color: white;
+    font-size: 22px;
+    margin-top: 22px;
+}
+.form input{
+    width: 320px;
+    padding: 8px;
+    outline: none;
+    margin: 3px;
+    margin-top: 11px;
+}
+
+/* FullPage */
+
+.fullPage{
+    
+    display: flex;
+    justify-content: center;
+    display: none;
+    margin-top: 22px;
+}
+.fullPage .cartText{
+    padding: 22px;
+    margin-top: 33px;
+}
+.cartText p{
+    margin-top: 11px;
+}
+.cartText .btn button{
+    width: 140px;
+    height: 40px;
+    background: rgb(247, 133, 2);
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-top: 22px;
+}
+.btn button:hover{
+    background-color: rgb(253, 173, 25);
+    cursor: pointer;
+}
+.cartText h2{
+    margin-top: 11px;
+}
+.relode{
+    background-color: rgb(3, 75, 75);
+    color: white;
+    width: 140px;
+    height: 34px;
+    border: none;
+    font-size: 22px;
+    margin-top: 22px;
+}
+.relode:hover{
+    background-color: rgb(4, 141, 141);
+    cursor: pointer;
+
+}
+    </style>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Piedra&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Trends</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="home()">Home</a>
+                    <a id="shop" onclick="shop()">Shops</a>
+                    <a id="blog" onclick="blog()">Blog</a>
+                    <a id="about" onclick=" about()">About</a>
+                    <a id="contact" onclick="contact()">Contact</a>
+                    <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mainPage">
+            <div class="text">
+                <h2>Trends...</h2>
+                <h1 class="heads">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi</p>
+                <button>Explore</button>
+            </div>
+            <img src="images/m3(1).png" alt="">
+        </div>
+
+
+
+        <div class="cardMen">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card" id="item1">
+                <div class="crd">
+                    <img src="images/srt1.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cutton Trending Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button onclick="add(item1)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="images/srt2.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cutton Trending Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="images/srt6.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cutton Trending Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cardgirl">
+            <div class="head">
+                <h1>Trends <span>Women's Wear</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="crd">
+                    <img src="images/wn6.webp" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="images/wn4.webp" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="images/wn5.webp" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Full cart  -->
+        <div class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br> Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- add to cart -->
+        <div class="addCart">
+
+        </div>
+
+        <div class="blogContent">
+            <div class="head">
+                <h1>Trends Top <span>Blog's</span></h1>
+            </div>
+
+            <div class="trd">
+                <div class="trending">
+                    <img src="images/tr1.webp" alt="">
+                    <div class="txt">
+                        <h3>Trending Girl Cloths</h3><br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p><br>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                    </div>
+                </div>
+                <div class="trending">
+                    <img src="images/tr3.webp" alt="">
+                    <div class="txt">
+                        <h3>Trending Boys Cloths</h3> <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p><br>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="aboutText">
+                <h1>#Know Us...</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+            </div>
+
+            <div class="aboutus">
+                <img src="images/lap.png" alt="">
+                <div class="dumiText">
+                    <h1>Who we are ?</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam
+                        aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt
+                        ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo
+                        corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic
+                        praesentium autem, officiis dignissimos assumenda saepe.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactBanner">
+                <h1>#Let's Connect</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+
+            </div>
+            <div class="connect">
+                <div class="connectText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address : Dablin Park, England, New york</p>
+                    <p>Contact : dumiemail@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+                <img src="images/map.PNG" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LsstName"> <br>
+                <input type="text" placeholder="Enter Your Email"><br>
+                <input type="text" placeholder="Enter Your Number"><br>
+                <input type="text" placeholder="Enter Your Address"><br>
+                <button>Submit</button>
+
+            </div>
+        </div>
+
+        <div class="letter">
+            <div class="sign">
+                <h2>Sign Up for NewsLetter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur Special Offer</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email Address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Trends</h1>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>About US</h3>
+                <p>Adrress : Lorem ipsum dolor sit amet,<br> consectetur adipisicing <br> Perferendis, excepturi alias.
+                </p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Contect</h3>
+                <p>9989003229</p>
+                <p>Customer</p>
+                <p>Comming up..</p>
+                <p>New Arrival</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Trending</h3>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>SHops</p>
+                <p></p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        let mainPage = document.querySelector(".mainPage");
+let blogContent = document.querySelector(".blogContent");
+let cardMen = document.querySelector(".cardMen");
+let cardgirl = document.querySelector(".cardgirl");
+let aboutPage = document.querySelector(".about");
+let contactus = document.querySelector(".contact");
+
+
+
+
+function home() {
+   mainPage.style.display = "flex";
+   cardMen.style.display = "block";
+   cardgirl.style.display = "block";
+   blogContent.style.display = "block"
+   contactus.style.display="none"
+   
+   document.getElementById("blog").style.color = "black";
+   document.getElementById("shop").style.color = "black";
+   document.getElementById("home").style.color = "rgb(1, 190, 190)";
+   document.getElementById("about").style.color = "black";
+   document.getElementById("contact").style.color="black";
+
+
+
+
+
+}
+
+
+function shop() {
+   cardMen.style.display = "block";
+   cardgirl.style.display = "block";
+   mainPage.style.display = "none"
+   blogContent.style.display = "none";
+   aboutPage.style.display = "none";
+   contactus.style.display="none"
+   
+   document.getElementById("blog").style.color = "black";
+   document.getElementById("about").style.color = "black";
+   document.getElementById("shop").style.color = "rgb(1, 190, 190)"
+   document.getElementById("home").style.color = "black"
+   document.getElementById("contact").style.color="black";
+
+
+}
+
+
+function blog() {
+
+   cardMen.style.display = "none";
+   cardgirl.style.display = "none";
+   mainPage.style.display = "none";
+   blogContent.style.display = "block"
+   aboutPage.style.display = "none";
+   contactus.style.display="none"
+
+   document.getElementById("blog").style.color = "rgb(1, 190, 190)";
+   document.getElementById("home").style.color = "black"
+   document.getElementById("shop").style.color = "black"
+   document.getElementById("about").style.color = "black";
+   document.getElementById("contact").style.color="black";
+
+
+
+
+
+}
+
+
+function about() {
+   aboutPage.style.display = "block";
+   cardMen.style.display = "none";
+   cardgirl.style.display = "none";
+   mainPage.style.display = "none";
+   blogContent.style.display = "none";
+   contactus.style.display="none";
+
+   document.getElementById("blog").style.color = "black";
+   document.getElementById("home").style.color = "black"
+   document.getElementById("shop").style.color = "black";
+   document.getElementById("about").style.color = "rgb(1, 190, 190)"
+   document.getElementById("contact").style.color="black";
+
+
+}
+
+
+function contact() {
+   contactus.style.display="block";
+   aboutPage.style.display = "none";
+   cardMen.style.display = "none";
+   cardgirl.style.display = "none";
+   mainPage.style.display = "none";
+   blogContent.style.display = "none"
+   document.getElementById("blog").style.color = "black";
+   document.getElementById("home").style.color = "black";
+   document.getElementById("shop").style.color = "black";
+   document.getElementById("about").style.color = "black";
+   document.getElementById("contact").style.color="rgb(1, 190, 190)"
+
+} 
+
+function showCard(img){
+   let newImg = document.getElementById("cartImg");
+   newImg.src=img.src;
+   document.querySelector(".fullPage").style.display="flex";
+   contactus.style.display="none";
+   aboutPage.style.display = "none";
+   cardMen.style.display = "none";
+   cardgirl.style.display = "none";
+   mainPage.style.display = "none";
+   blogContent.style.display = "none"
+
+
+
+}
+
+// Add to Cart
+
+function addItem(){
+   document.querySelector(".addCart").style.display="block";
+   contactus.style.display="none";
+   aboutPage.style.display = "none";
+   cardMen.style.display = "none";
+   cardgirl.style.display = "none";
+   mainPage.style.display = "none";
+   blogContent.style.display = "none"
+
+ 
+
+
+
+}
+ 
+function addToCart(){
+   alert("Added To Cart");
+   location.reload();
+}
+    </script>
+</body>
+
+</html>
